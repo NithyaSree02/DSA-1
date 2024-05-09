@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo1.png" sizes="70x50">
+    <title>ThirllTopia Theme park and Resort</title>
+    <link rel="stylesheet" href="../css/accomodation.css">
+</head>
+<body>
+	<header>
+		<div class="header-bg">
+			<div class="header-container">
+				<a href="#"><img src="../img/logo1.png" alt="ThrillTopia Logo" class="logo"></a>
+				<nav>
+					<ul>
+						<li><a href="rides.html">Rides</a></li>                    
+						<li><a href="#">Accomodation</a></li>
+						<li><a href="index.html"><em>ThrillTopia</em></a></li>
+						<li><a href="tariff.html">Tariff</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+    </header>
+
+    <br><br>
+    <section>
+        <h2 class="subheading">ACCOMODATION</h2>
+            <figure>
+                <div class="room-slideshow">
+                    <div class="mySlides fade">
+                        <img class="mainImage" src="../img/room1.jpg" alt="Room 1" height="400" width="600">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="mainImage" src="../img/room2.png" alt="Room 2" height="400" width="600">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="mainImage" src="../img/room3.png" alt="Room 3" height="400" width="600">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="mainImage" src="../img/room4.png" alt="Room 4" height="400" width="600">
+                    </div>
+                    <button class="room-prev" onclick="plusRoomSlides(-1)">❮ Prev</button>
+                    <button class="room-next" onclick="plusRoomSlides(1)">Next ❯</button>
+                </div>
+                <aside>
+                    <p><b><span class="firstletter">T</span>he Deluxe Rooms at ThrillTopia</b> - Water Theme Park are decked with comfort and convenience for you to have a pleasant stay at our hotel. These are some of the best luxury rooms near Coimbatore that are well-equipped with modern amenities and facilities. Book now and enjoy !</p>
+                    <p><b><span class="firstletter">T</span>he Suites at ThrillTopia</b> - Water Theme Park are popularly known for their immense comfort and a range of complimentary amenities and services that let you enjoy a wonderful stay in Coimbatore. Furnished with a wide range of 24-hour room services. </p>
+                </aside>
+            </figure>      
+    </section>
+
+    <section>
+        <h2 class="subheading">DINING</h2>
+        <h3>ThunderCafe</h3>
+        <figure>
+            <div class="dine-slideshow">
+                <div class="mySlides fade">
+                    <img class="mainImage" src="../img/dine1.jpg" alt="Dining 1">
+                </div>
+                <div class="mySlides fade">
+                    <img class="mainImage" src="../img/dine2.png" alt="Dining 2">
+                </div>
+                <div class="mySlides fade">
+                    <img class="mainImage" src="../img/dine3.png" alt="Dining 3">
+                </div>
+                <button class="dine-prev" onclick="plusDineSlides(-1)">❮ Prev</button>
+                <button class="dine-next" onclick="plusDineSlides(1)">Next ❯</button>
+            </div>
+            <aside>
+                <p><span class="firstletter">O</span>ur elegant multi-cuisine restaurant is the perfect setting for family celebrations, reunions, work functions, 
+                corporate meetings and more. The elaborate menu and utilities of Thunder Cafe make it one of the best restaurants in 
+                Mettupalayam. A wall of floor-to-ceiling windows allows natural sunlight to reach every table. For those who wish to 
+                feel more outdoors, we do offer seating in our Bamboo Garden section at our Mettupalayam restaurant. </p>
+            </aside>
+        </figure>
+    </section>
+    
+    
+    <footer>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="social-media">
+            <a href="https://www.facebook.com/blackthunderwaterpark/"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@ThemeParkWorldwide"><img src="../img/youtube.png" alt="Youtube"></a>
+            <a href="https://www.instagram.com/blackthunderthemepark/"><img src="../img/insta.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 ThrillTopia</p>
+    </div>
+</footer>
+
+<script>
+    var roomSlideIndex = 0;
+    var dineSlideIndex = 0;
+
+    showRoomSlides(roomSlideIndex);
+    showDineSlides(dineSlideIndex);
+
+    function plusRoomSlides(n) {
+        showRoomSlides(roomSlideIndex += n);
+    }
+
+    function plusDineSlides(n) {
+        showDineSlides(dineSlideIndex += n);
+    }
+
+    function showRoomSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("room-slideshow")[0].getElementsByClassName("mySlides");
+        if (n >= slides.length) {roomSlideIndex = 0;}
+        if (n < 0) {roomSlideIndex = slides.length - 1;}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[roomSlideIndex].style.display = "block";  
+    }
+
+    function showDineSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("dine-slideshow")[0].getElementsByClassName("mySlides");
+        if (n >= slides.length) {dineSlideIndex = 0;}
+        if (n < 0) {dineSlideIndex = slides.length - 1;}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[dineSlideIndex].style.display = "block";  
+    }
+
+</script>
+
+
+</body>
+</html>
