@@ -1,0 +1,161 @@
+/* CSS for Background */
+body {
+    background-image: url('../img/contact_bg.jpg'); /* Set background image for the body */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CSS for Navigation Bar */
+.header-bg {
+    background-image: url("../img/h1_bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px; /* Adjust padding to cover the entire margin area of h1 */
+}
+
+.header-container {
+    background-color: rgba(190, 167, 176,0.8); /* Adjust the color and opacity as needed */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the content behind */
+    padding: 20px; /* Add padding to the header container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0; /* Ensure the navigation stays at the top */
+    width: 100%; /* Occupy full width of the viewport */
+}
+
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+nav {
+    margin-top: 0px;
+    margin-right: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 90px; /* Add margin between navigation links */
+}
+
+nav ul li a {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgba(194, 23, 123, 0.866);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(11, 4, 16); /* Adjust hover color as needed */
+}
+
+
+/* Style for the middle content */
+.subheading{
+    text-align: center;
+    color: rgb(185, 108, 26);
+    margin-top: 90px;
+    font-size: 30px;
+}
+
+h3{
+    margin-left: 20%;
+}
+
+.mainImage{
+    float:left;
+    height:300px; 
+    width:400px;
+    padding-right:20px;
+    padding-bottom:15px;
+    border-radius:5%;
+}
+
+span.firstletter{
+    font-size:25px;
+    color: rgb(185, 108, 26);
+    
+}
+
+p{
+    line-height: 1.6em;
+    font-size: 17px;
+    text-align:justify;
+}
+
+table{
+    margin-right: 0px;
+}
+
+td,th{
+   text-align: center; 
+   border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background: #e8e7e1;
+}
+
+tbody tr:nth-child(odd){
+    background: #cdccc7;
+}
+
+.charge{
+    float:right;
+    margin-bottom: 50px;
+    margin-right: 15%;
+    margin-left: 0px;
+}
+
+.video{
+    width:350px;
+    height:200px;
+    padding-left: 300px;
+}
+
+nav.clear{
+    margin-top: 60px;
+    color: white;
+    clear:left;
+    font-size: 20px;
+}
+
+.clear ul li{
+    line-height: 1.7em;
+}
+
+/* CSS for Footer */
+footer {
+    background-color: rgba(190, 167, 176, 0.8);
+    backdrop-filter: blur(5px); 
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+/* CSS for Contact Container */
+.contact-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+/* CSS for Social Media Icons */
+.social-media img {
+    width: 40px; 
+    margin: 10px; 
+}

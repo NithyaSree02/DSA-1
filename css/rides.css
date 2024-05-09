@@ -1,0 +1,190 @@
+/* CSS for Background */
+body {
+    background-image: url('../img/contact_bg.jpg'); /* Set background image for the body */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CSS for Navigation Bar */
+.header-bg {
+    background-image: url("../img/h1_bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px; /* Adjust padding to cover the entire margin area of h1 */
+}
+
+.header-container {
+    background-color: rgba(190, 167, 176,0.8); /* Adjust the color and opacity as needed */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the content behind */
+    padding: 20px; /* Add padding to the header container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0; /* Ensure the navigation stays at the top */
+    width: 100%; /* Occupy full width of the viewport */
+}
+
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+nav {
+    margin-top: 0px;
+    margin-right: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 90px; /* Add margin between navigation links */
+}
+
+nav ul li a {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgba(194, 23, 123, 0.866);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(11, 4, 16); /* Adjust hover color as needed */
+}
+
+
+/* Style for the middle content */
+
+.subheading{
+    padding-top: 50px;
+    text-align: center;
+    color: rgb(185, 108, 26);
+    font-size: 30px;
+}
+
+figure img{
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+    padding-left: 300px;
+
+}
+
+span.firstletter{
+    font-size:25px;
+    color: rgb(185, 108, 26);
+    
+}
+
+aside p{
+    color:rgb(224, 216, 216);
+    line-height: 1.6em;
+    font-size: 17px;
+    text-align:justify;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h3{
+    text-align: center;
+    color:rgb(224, 216, 216);
+}
+
+.ride-container-row {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Distribute items evenly with space around */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+.ride-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    margin: 20px auto; /* Center the container horizontally */
+    max-width: 400px; /* Limit the maximum width of the container */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
+.ride-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ride-heading {
+    font-size: 24px;
+    color: #8B4000;
+    margin-bottom: 10px;
+}
+
+.ride-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ride-description {
+    display: none;
+    color: #333;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* CSS for Description text as a button */
+.description-text {
+    cursor: pointer;
+    display: inline-block; /* Make it a block-level element */
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #8B4000; /* Blue background color */
+    color: #fff; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Add transition for smooth color change on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add hover effect for Description button */
+.description-text:hover {
+    background-color: #E37383; /* Darker shade of blue on hover */
+}
+
+
+/* CSS for Footer */
+footer {
+    background-color: rgba(190, 167, 176, 0.8);
+    backdrop-filter: blur(5px); 
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+/* CSS for Contact Container */
+.contact-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+/* CSS for Social Media Icons */
+.social-media img {
+    width: 40px; 
+    margin: 10px; 
+}
+
+

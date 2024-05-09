@@ -1,0 +1,192 @@
+/* CSS for Background */
+body {
+    background-image: url('../img/contact_bg.jpg'); /* Set background image for the body */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CSS for Navigation Bar */
+.header-bg {
+    background-image: url("../img/h1_bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px; /* Adjust padding to cover the entire margin area of h1 */
+}
+
+.header-container {
+    background-color: rgba(190, 167, 176,0.8); /* Adjust the color and opacity as needed */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the content behind */
+    padding: 20px; /* Add padding to the header container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0; /* Ensure the navigation stays at the top */
+    width: 100%; /* Occupy full width of the viewport */
+}
+
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+nav {
+    margin-top: 0px;
+    margin-right: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 90px; /* Add margin between navigation links */
+}
+
+nav ul li a {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgba(194, 23, 123, 0.866);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(11, 4, 16); /* Adjust hover color as needed */
+}
+
+
+/* Style for the middle content */
+.contact {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.loc-box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.location {
+    flex: 1; /* Takes up available space */
+    margin-left: 100px;
+    margin-right: 180px; /* Optional: adds some space between the two boxes */
+    max-width: 300px;
+    color: white;
+}
+
+.box1{
+    background-color: rgba(119, 115, 115, 0.406);
+    border-radius: 10px;
+    padding: 30px 2px;
+}
+
+.box2 {
+    background-color: rgba(119, 115, 115, 0.406);
+    border-radius: 10px;
+    padding: 5px 2px;
+    max-width: 220px;
+    margin-left: 40px;
+}
+
+.contact-box {
+    flex: 1; /* Takes up available space */
+    background-color: rgba(190, 167, 176);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: left; /* Align text to the left */
+}
+
+.contact h1 {
+    color: rgb(185, 108, 26);
+    margin-bottom: 0px;
+}
+
+.contact p.contact_p {
+    color: white;
+    margin-top: 0px;
+}
+
+.contact p {
+    color: rgb(255, 255, 255);
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 430px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.contact-box input[type="submit"] {
+    background-color: rgb(185, 108, 26);
+    color: white;
+    padding: 10px 100px;
+    margin-left: 120px;
+    font-size: medium;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-box input[type="submit"]:hover {
+    background-color: rgb(185, 108, 26);
+}
+
+.contact-box h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* CSS for Footer */
+footer {
+    background-color: rgba(190, 167, 176, 0.8);
+    backdrop-filter: blur(5px); 
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+/* CSS for Contact Container */
+.contact-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+/* CSS for Social Media Icons */
+.social-media img {
+    width: 40px; 
+    margin: 10px; 
+}
